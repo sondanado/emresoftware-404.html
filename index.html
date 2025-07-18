@@ -3,18 +3,18 @@
 var password;
 var pass1="emresoftware1881";
 
-// Önce tarayıcıda kayıtlı olan şifreyi kontrol et
+
 var savedPassword = localStorage.getItem("savedPassword");
 
 if (savedPassword == pass1) {
-    //alert('Hoş geldiniz! Kayıtlı şifrenizle giriş yapıldı.');
+  
 } else {
     // Kayıtlı şifre yoksa kullanıcıdan tekrar şifre iste
-    password = prompt('Sayfayı görebilmek için lütfen şifreyi giriniz', '');
+    password = prompt('Password:', '');
 
     if (password == pass1) {
-        alert('Şifreyi doğru girdiniz!');
-        // Şifreyi tarayıcıda kaydet
+        alert('Succes!');
+       
         localStorage.setItem("savedPassword", pass1);
     } else {
         window.location = "";
